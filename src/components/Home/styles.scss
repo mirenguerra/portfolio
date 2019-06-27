@@ -24,20 +24,46 @@
   color: #252525;
   padding: 5px;
 }
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  cursor: pointer;
+  transition: all 0.8s;
+  border: none;
+}
 
-.Home__menu{
+.Home__menu {
   width: 40px;
   height: 40px;
-  position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   background-color: #fdb44b;
-  background-image: url('../../images/menu.png');
+  color: #fff;
+  background-image: url("../../images/menu.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70% auto;
-  &:hover{
-    background-color: darken(#fdb44b, 15%)
+  &:hover {
+    background-color: darken(#fdb44b, 15%);
+  }
+}
+
+.Home__aboutMe {
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 100px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: white;
+  color: #fdb44b;
+  border: #fdb44b solid 1px;
+  &:hover {
+    background-color: #fdb44b;
+    border: none;
+    color: white;
   }
 }
 

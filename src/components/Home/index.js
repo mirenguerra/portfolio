@@ -12,7 +12,10 @@ function Home() {
         <h2 className="Home__subtitle">Front-end developer</h2>
       </div>
       <Link to="/menu">
-        <nav className="Home__menu" />
+        <button className="Home__menu btn" />
+      </Link>
+      <Link to="/aboutme">
+        <button className="Home__aboutMe btn">Sobre mí</button>
       </Link>
     </div>
   );
