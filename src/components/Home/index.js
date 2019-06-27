@@ -1,7 +1,6 @@
 import React from "react";
 import "./styles.scss";
-import Menu from "../Menu/index";
-import AboutMe from "../AboutMe/index";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -12,8 +11,9 @@ function Home() {
         <div className="Home__bar" />
         <h2 className="Home__subtitle">Front-end developer</h2>
       </div>
-      <Menu />
-      <AboutMe />
+      <Link to="/menu">
+        <nav className="Home__menu" />
+      </Link>
     </div>
   );
 }

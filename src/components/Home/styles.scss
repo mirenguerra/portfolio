@@ -12,16 +12,33 @@
   background-position: center;
   background-size: 200% auto;
   position: relative;
-  height: 400px;
+  height: 390px;
 }
 
 .Home__text-wrapper {
+  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #252525;
-  padding: 8px;
+  padding: 5px;
+}
+
+.Home__menu{
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top:0;
+  left: 0;
+  background-color: #fdb44b;
+  background-image: url('../../images/menu.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70% auto;
+  &:hover{
+    background-color: darken(#fdb44b, 15%)
+  }
 }
 
 .Home__title {
@@ -32,7 +49,7 @@
   font-size: 15px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-top: 15px;
+  margin: 20px 0;
 }
 
 .Home__bar {
