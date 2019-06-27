@@ -4,6 +4,10 @@
   width: 100%;
   height: 100%;
   background-color: #fdb44b;
+
+  @media all and (min-width: 768px){
+    flex-direction: row;
+  }
 }
 
 .Home__photo {
@@ -13,6 +17,11 @@
   background-size: 200% auto;
   position: relative;
   height: 390px;
+  @media all and (min-width: 768px){
+    position: fixed;
+    height: 100%;
+    width: 50%;
+  }
 }
 
 .Home__text-wrapper {
@@ -23,6 +32,14 @@
   justify-content: center;
   color: #252525;
   padding: 5px;
+  background: #fdb44b;
+  @media all and (min-width: 768px){
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+  }
 }
 .btn {
   display: flex;
