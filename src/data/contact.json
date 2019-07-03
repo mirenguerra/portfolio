@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Github",
+    "icon": "github",
+    "type": "social-media",
+    "url": "https://github.com/mirenguerra"
+  },
+  {
+    "name": "Twitter",
+    "icon": "twitter",
+    "type": "social-media",
+    "url": "https://twitter.com/Miren_GS"
+  },
+  {
+    "name": "Linkedin",
+    "icon": "linkedin",
+    "type": "social-media",
+    "url": "https://www.linkedin.com/in/mirenguerrasanz/"
+  },
+  {
+    "name": "Email",
+    "icon": "envelope",
+    "type": "email",
+    "url": "mailto:miren.guerra.sanz@gmail.com"
+  }
+]
