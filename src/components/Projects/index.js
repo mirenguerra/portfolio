@@ -1,6 +1,8 @@
 import React from "react";
 import "./styles.scss";
 import projects from "../../data/projects.json";
+import ProjectCard from '../ProjectCard/index';
+
 
 class Projects extends React.Component {
   constructor(props) {
@@ -21,8 +23,8 @@ class Projects extends React.Component {
   render() {
     const { selectedDev } = this.state;
     return (
-      <section id="projects" className="section projects">
-        <h2 className="text-center">Mis Proyectos</h2>
+      <section id="projects" className="Card__ist">
+        <h2 className="Card__list-title">Mis Proyectos</h2>
 
         <select defaultValue={selectedDev} onChange={this.onSelectChange}>
           <option value="Todos">Todos</option>
@@ -35,45 +37,25 @@ class Projects extends React.Component {
           <option value="API REST">API REST</option>
         </select>
 
-        <div className="project-list">
+        <ul className="Card">
           {projects
             .filter(
               item => item.dev.includes(selectedDev) || selectedDev === "Todos"
             )
             .map(project => {
               return (
-                <div className="card-img" key={project.id}>
-                  <img
-                    className="Card__img"
-                    src={project.img}
-                    alt={project.name}
+                <li className="Card__wrapper" key={project.id}>
+                  <ProjectCard 
+                  img={project.img}
+                  name={project.name}
+                  description={project.description}
+                  code={project.code}
+                  demo={project.demo}
                   />
-
-                  <h4 className="card-name">{project.name}</h4>
-                  <p>{project.description}</p>
-
-                  <a
-                    href={project.demo}
-                    key={project.demo}
-                    // className={singleCardClass}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Demo
-                  </a>
-                  <a
-                    href={project.code}
-                    key={project.code}
-                    // className={singleCardClass}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Code
-                  </a>
-                </div>
+                </li>
               );
             })}
-        </div>
+        </ul>
       </section>
     );
   }
