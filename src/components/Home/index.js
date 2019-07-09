@@ -14,9 +14,7 @@ function Home() {
       <Link to="/menu">
         <button className="Home__menu btn" />
       </Link>
-      <Link to="/aboutme">
-        <button className="Home__aboutMe btn">Sobre mí</button>
-      </Link>
+    
     </div>
   );
 }
