@@ -1,7 +1,8 @@
-* {
+* , *::before, *::after{
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style-type: none;
   font-family: "Palanquin", sans-serif;
+  border: solid 1px blue;
 }
