@@ -1,8 +1,30 @@
-.Projects {
-  text-align: center;
+.Card__wrapper {
+  width: 320px;
+  height: 420px;
+  margin-bottom: 40px;
+  padding: 10px;
+  border: solid rgba(51, 122, 183, 0.1) thin;
+  border-radius: 5px;
+  box-shadow: 0 12px 12px 0 #f39e26;
+  background-color: white;
 }
 
-.Card__img{
-  width: 200px;
+.Card__img {
+  width: 100%;
   height: auto;
+  border: solid rgba(51, 122, 183, 0.1) thin;
+  padding-bottom: 10px;
+}
+
+.Card__name{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.Card__description{
+  font-size: 14px;
+  font-weight: 400;
+  text-align: justify;
+  padding-bottom: 10px;
 }

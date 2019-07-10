@@ -23,10 +23,10 @@ class Projects extends React.Component {
   render() {
     const { selectedDev } = this.state;
     return (
-      <section id="projects" className="Card__ist">
+      <section id="projects" className="Card__section">
         <h2 className="Card__list-title">Mis Proyectos</h2>
 
-        <select defaultValue={selectedDev} onChange={this.onSelectChange}>
+        <select className="Card__select" defaultValue={selectedDev} onChange={this.onSelectChange}>
           <option value="Todos">Todos</option>
           <option value="React">React</option>
           <option value="JavaScript">JavaScript</option>
@@ -37,14 +37,14 @@ class Projects extends React.Component {
           <option value="API REST">API REST</option>
         </select>
 
-        <ul className="Card">
+        <ul className="Card__list">
           {projects
             .filter(
               item => item.dev.includes(selectedDev) || selectedDev === "Todos"
             )
             .map(project => {
               return (
-                <li className="Card__wrapper" key={project.id}>
+                <li className="Card__element" key={project.id}>
                   <ProjectCard 
                   img={project.img}
                   name={project.name}

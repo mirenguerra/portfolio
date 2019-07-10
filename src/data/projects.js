@@ -46,7 +46,7 @@ const projectsInfo = [
   },
   {
     id: 5,
-    name: "Awesome Profile Cards-Migración a React",
+    name: "Awesome Profile Cards - Migración a React",
     description: "Migración del proyecto Awesome Profile Cards a React y refactorización de código.",
     dev: [
       "HTML5",
