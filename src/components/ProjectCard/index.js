@@ -5,6 +5,7 @@ const ProjectCard = props => {
   const { id, img, name, description, demo, code } = props;
   return (
     <section className="Card__wrapper" key={id}>
+       
       <a
         href={demo}
         key={demo}
@@ -12,8 +13,12 @@ const ProjectCard = props => {
         target="_blank"
         rel="noopener noreferrer"
       >
+      <div className="tooltip" >
         <img className="Card__img" src={img} alt={name} />
+        <span className="tiptext">Pincha sobre la imagen para ver la demo</span>
+                </div>
       </a>
+         
       <h4 className="Card__name">{name}</h4>
       <p className="Card__description">{description}</p>
 

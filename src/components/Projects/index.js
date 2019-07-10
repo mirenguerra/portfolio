@@ -44,15 +44,17 @@ class Projects extends React.Component {
             )
             .map(project => {
               return (
-                <li className="Card__element" key={project.id}>
-                  <ProjectCard 
-                  img={project.img}
-                  name={project.name}
-                  description={project.description}
-                  code={project.code}
-                  demo={project.demo}
-                  />
-                </li>
+             
+                  <li className="Card__element" key={project.id} >
+                    <ProjectCard 
+                    img={project.img}
+                    name={project.name}
+                    description={project.description}
+                    code={project.code}
+                    demo={project.demo}
+                    />
+                  </li>
+               
               );
             })}
         </ul>

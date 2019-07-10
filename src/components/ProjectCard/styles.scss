@@ -14,6 +14,10 @@
   height: auto;
   border: solid rgba(51, 122, 183, 0.1) thin;
   padding-bottom: 10px;
+  transition: all ease 0.5s;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .Card__name{
@@ -27,4 +31,23 @@
   font-weight: 400;
   text-align: justify;
   padding-bottom: 10px;
+}
+
+
+.tiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #fdb249;
+  color: black;
+  text-align: center;
+  border-radius: 3px;
+  padding: 6px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 5px 10px grey;
+  font-size: 10px;
+}
+
+.tooltip:hover .tiptext {
+  visibility: visible;
 }
