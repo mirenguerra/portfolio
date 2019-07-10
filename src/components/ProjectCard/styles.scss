@@ -1,6 +1,6 @@
 .Card__wrapper {
   width: 320px;
-  height: 420px;
+  height: 450px;
   margin-bottom: 40px;
   padding: 10px;
   border: solid rgba(51, 122, 183, 0.1) thin;
@@ -50,4 +50,18 @@
 
 .tooltip:hover .tiptext {
   visibility: visible;
+}
+
+.code{
+  display: block;
+  width: 80px;
+  height: 30px;
+  top: 10px;
+  left: 10px;
+  background-color: #fdb44b;
+  color: #fff;
+  border-radius: 5px;
+  &:hover {
+    background-color: darken(#fdb44b, 15%);
+  }
 }
