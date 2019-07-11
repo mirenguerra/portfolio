@@ -2,13 +2,26 @@ import React from "react";
 import "./styles.scss";
 import { Link } from "react-router-dom";
 
-function Menu() {
+const Menu = props => {
+  const { isClose, handleToggleClick } = props;
   return (
-    <div className="Menu">
-      <Link to="/projects"> Proyectos</Link>
-      <Link to="/aboutme">Sobre mí</Link>
-    </div>
+    <React.Fragment>
+      <button
+        className={isClose ? "Menu__nav-trigger btn" : "Menu__nav-close btn"}
+        title="menu"
+        type="button"
+        onClick={handleToggleClick}
+      >
+        
+      </button>
+      <div className={isClose ? "hide" : ""}>
+        <nav className="Menu">
+          <Link to="/projects"> Proyectos</Link>
+          <Link to="/aboutme">Sobre mí</Link>
+        </nav>
+      </div>
+    </React.Fragment>
   );
-}
+};
 
 export default Menu;

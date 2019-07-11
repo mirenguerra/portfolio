@@ -11,10 +11,6 @@ function Home() {
         <div className="Home__bar" />
         <h2 className="Home__subtitle">Front-end developer</h2>
       </div>
-      <Link to="/menu">
-        <button className="Home__menu btn" />
-      </Link>
-    
     </div>
   );
 }
