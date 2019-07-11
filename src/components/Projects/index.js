@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.scss";
 import projects from "../../data/projects.js";
 import ProjectCard from "../ProjectCard/index";
-import { Link } from "react-router-dom";
+import HomeButton from "../HomeButton/index";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -40,9 +40,7 @@ class Projects extends React.Component {
           <option value="Diseño Responsive">Diseño Responsive</option>
           <option value="API REST">API REST</option>
         </select>
-        <Link to="/">
-          <button className="Card__home-btn" type="button" />
-        </Link>
+        <HomeButton />
         <ul className="Card__list">
           {projects
             .filter(

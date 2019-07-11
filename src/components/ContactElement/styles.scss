@@ -1,0 +1,15 @@
+.ContactElement__wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.ContactElement__icon {
+  width: auto;
+  height: 40px;
+}
+
+.ContactElement__name {
+  color: #292940eb;
+  margin: 5px 0 5px 10px;
+}

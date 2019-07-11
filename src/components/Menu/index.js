@@ -15,6 +15,7 @@ const Menu = props => {
       <nav className={isClose ? "hide" : "show"}>
         <Link to="/projects"> Proyectos</Link>
         <Link to="/aboutme">Sobre mí</Link>
+        <Link to="/contact">Contacto</Link>
       </nav>
     </React.Fragment>
   );

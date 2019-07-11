@@ -2,6 +2,7 @@ import React from "react";
 import Home from "../Home/index";
 import AboutMe from "../AboutMe/index";
 import Projects from "../Projects/index";
+import Contact from "../Contact/index";
 import { Switch, Route } from "react-router-dom";
 
 class App extends React.Component {
@@ -38,6 +39,7 @@ class App extends React.Component {
         />
         <Route path="/aboutme" component={AboutMe} />
         <Route path="/projects" component={Projects} />
+        <Route path="/contact" component={Contact} />
       </Switch>
     );
   }
