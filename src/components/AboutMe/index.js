@@ -2,13 +2,14 @@ import React from "react";
 import "./styles.scss";
 import HomeButton from "../HomeButton/index";
 
-function AboutMe() {
+const AboutMe = props => {
+  const { closeNav } = props;
   return (
     <div className="AboutMe">
       <h1 className="AboutMe__title">¡Hola, soy Miren!</h1>
-      <HomeButton />
+      <HomeButton navClose={closeNav} />
     </div>
   );
-}
+};
 
 export default AboutMe;

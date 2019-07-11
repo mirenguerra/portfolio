@@ -4,10 +4,11 @@ import contacts from "../../data/contacts.js";
 import HomeButton from "../HomeButton/index";
 import ContactElement from "../ContactElement/index";
 
-function Contact() {
+const Contact = props => {
+  const {closeNav} = props;
   return (
     <section className="Contact">
-      <HomeButton />
+      <HomeButton navClose={closeNav}/>
       <ul className="Contact__list">
         {contacts.map(item => {
           return (

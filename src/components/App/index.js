@@ -12,11 +12,18 @@ class App extends React.Component {
       isClose: true,
     };
     this.handleToggleClick = this.handleToggleClick.bind(this);
+    this.closeNav = this.closeNav.bind(this);
   }
 
   handleToggleClick() {
     this.setState({
       isClose: !this.state.isClose,
+    });
+  }
+
+  closeNav() {
+    this.setState({
+      isClose: true,
     });
   }
 
@@ -37,9 +44,31 @@ class App extends React.Component {
             );
           }}
         />
-        <Route path="/aboutme" component={AboutMe} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={Contact} />
+        <Route
+          path="/aboutme"
+          render={routerProps => {
+            return (
+              <AboutMe match={routerProps.match} closeNav={this.closeNav} />
+            );
+          }}
+        />
+
+        <Route
+          path="/projects"
+          render={routerProps => {
+            return (
+              <Projects match={routerProps.match} closeNav={this.closeNav} />
+            );
+          }}
+        />
+        <Route
+          path="/contact"
+          render={routerProps => {
+            return (
+              <Contact match={routerProps.match} closeNav={this.closeNav} />
+            );
+          }}
+        />
       </Switch>
     );
   }

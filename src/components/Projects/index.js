@@ -22,6 +22,7 @@ class Projects extends React.Component {
 
   render() {
     const { selectedDev } = this.state;
+    const {closeNav} = this.props;
     return (
       <section id="projects" className="Card__section">
         <h2 className="Card__list-title">Mis Proyectos</h2>
@@ -40,7 +41,7 @@ class Projects extends React.Component {
           <option value="Diseño Responsive">Diseño Responsive</option>
           <option value="API REST">API REST</option>
         </select>
-        <HomeButton />
+        <HomeButton navClose={closeNav}/>
         <ul className="Card__list">
           {projects
             .filter(
