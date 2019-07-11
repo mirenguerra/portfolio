@@ -1,8 +1,9 @@
-.Card__section{
+.Card__section {
   background-color: #fdb249;
+  padding: 0 15px;
 }
 
-.Card__select{
+.Card__select {
   border-radius: 5px;
   background-color: white;
 }
@@ -19,4 +20,28 @@
   align-items: center;
   text-align: center;
   margin: 10px;
+}
+
+.Card__home-btn {
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #292940eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.8s;
+  border-radius: 5px;
+  background-image: url("../../images/home.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60% auto;
+  &:hover {
+    background-color: #292940eb;
+  }
 }

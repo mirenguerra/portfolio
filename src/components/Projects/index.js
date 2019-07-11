@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles.scss";
 import projects from "../../data/projects.js";
-import ProjectCard from '../ProjectCard/index';
-
+import ProjectCard from "../ProjectCard/index";
+import { Link } from "react-router-dom";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -26,7 +26,11 @@ class Projects extends React.Component {
       <section id="projects" className="Card__section">
         <h2 className="Card__list-title">Mis Proyectos</h2>
 
-        <select className="Card__select" defaultValue={selectedDev} onChange={this.onSelectChange}>
+        <select
+          className="Card__select"
+          defaultValue={selectedDev}
+          onChange={this.onSelectChange}
+        >
           <option value="Todos">Todos</option>
           <option value="React">React</option>
           <option value="JavaScript">JavaScript</option>
@@ -36,7 +40,9 @@ class Projects extends React.Component {
           <option value="Diseño Responsive">Diseño Responsive</option>
           <option value="API REST">API REST</option>
         </select>
-
+        <Link to="/">
+          <button className="Card__home-btn" type="button" />
+        </Link>
         <ul className="Card__list">
           {projects
             .filter(
@@ -44,17 +50,15 @@ class Projects extends React.Component {
             )
             .map(project => {
               return (
-             
-                  <li className="Card__element" key={project.id} >
-                    <ProjectCard 
+                <li className="Card__element" key={project.id}>
+                  <ProjectCard
                     img={project.img}
                     name={project.name}
                     description={project.description}
                     code={project.code}
                     demo={project.demo}
-                    />
-                  </li>
-               
+                  />
+                </li>
               );
             })}
         </ul>

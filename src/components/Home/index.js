@@ -1,18 +1,20 @@
 import React from "react";
 import "./styles.scss";
-import { Link } from "react-router-dom";
+import Menu from "../Menu/index";
 
-function Home() {
+const Home = props => {
+  const { isClose, handleToggleClick } = props;
   return (
-    <div className="Home">
+    <section className="Home">
+      <Menu isClose={isClose} handleToggleClick={handleToggleClick} />
       <div className="Home__photo" />
       <div className="Home__text-wrapper">
         <h1 className="Home__title">Miren Guerra</h1>
         <div className="Home__bar" />
         <h2 className="Home__subtitle">Front-end developer</h2>
       </div>
-    </div>
+    </section>
   );
-}
+};
 
 export default Home;

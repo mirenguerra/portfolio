@@ -11,15 +11,11 @@ const Menu = props => {
         title="menu"
         type="button"
         onClick={handleToggleClick}
-      >
-        
-      </button>
-      <div className={isClose ? "hide" : ""}>
-        <nav className="Menu">
-          <Link to="/projects"> Proyectos</Link>
-          <Link to="/aboutme">Sobre mí</Link>
-        </nav>
-      </div>
+      />
+      <nav className={isClose ? "hide" : "show"}>
+        <Link to="/projects"> Proyectos</Link>
+        <Link to="/aboutme">Sobre mí</Link>
+      </nav>
     </React.Fragment>
   );
 };

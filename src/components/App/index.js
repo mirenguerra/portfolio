@@ -1,7 +1,5 @@
 import React from "react";
-import "./styles.scss";
 import Home from "../Home/index";
-import Menu from "../Menu/index";
 import AboutMe from "../AboutMe/index";
 import Projects from "../Projects/index";
 import { Switch, Route } from "react-router-dom";
@@ -22,16 +20,25 @@ class App extends React.Component {
   }
 
   render() {
-    const {isClose}=this.state;
+    const { isClose } = this.state;
     return (
-      <div className="App">
-        <Menu isClose={isClose} handleToggleClick={this.handleToggleClick} />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/aboutme" component={AboutMe} />
-          <Route path="/projects" component={Projects} />
-        </Switch>
-      </div>
+      <Switch>
+        <Route
+          exact
+          path="/"
+          render={routerProps => {
+            return (
+              <Home
+                match={routerProps.match}
+                isClose={isClose}
+                handleToggleClick={this.handleToggleClick}
+              />
+            );
+          }}
+        />
+        <Route path="/aboutme" component={AboutMe} />
+        <Route path="/projects" component={Projects} />
+      </Switch>
     );
   }
 }
