@@ -19,6 +19,7 @@ const Contact = props => {
                 url={item.url}
                 user={item.user}
                 id={item.id}
+                type={item.type}
               />
             </li>
           );
