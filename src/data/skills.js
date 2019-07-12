@@ -73,7 +73,7 @@ const skills = [
   {
     id: 15,
     name: "Sketch",
-    img: require("../images/skills/sketch.svg"),
+    img: require("../images/skills/sketch.png"),
   },
   {
     id: 16,
