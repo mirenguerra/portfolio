@@ -5,7 +5,7 @@ const projectsInfo = [
     description:
       "Simple página responsive con un menú desplegable. Hecho con HTML heredado sin posibilidad de modificarlo, y añadiendo estilos con CSS y funcionalidad con JavaScript, sin usar frameworks CSS o preprocesadores.",
     dev: ["HTML5", "CSS3", "JavaScript", "ES6", "Diseño Responsive"],
-    img: require("../images/AnonymousServer_cover.png"),
+    img: require("../images/projects/AnonymousServer_cover.png"),
     demo: "http://beta.adalab.es/f-online-anonymous-server-mirenguerra/",
     code:
       "https://github.com/mirenguerra/f-online-anonymous-server-mirenguerra",
@@ -16,7 +16,7 @@ const projectsInfo = [
     description:
       "Página web responsive en la que nos presentamos como grupo Realizado principalmente con CSS3 y SASS.",
     dev: ["HTML5", "CSS3", "SASS", "ES6", "Diseño Responsive"],
-    img: require("../images/RockandCode_cover.png"),
+    img: require("../images/projects/RockandCode_cover.png"),
     demo: "http://beta.adalab.es/f-m1-rock-code/",
     code: "https://github.com/mirenguerra/f-m1-rock-code",
   },
@@ -26,7 +26,7 @@ const projectsInfo = [
     description:
       "Juego presentado por una ranita que consiste en adivinar un número aleatorio. La ranita croa cuando aciertas el número. Realizado principalmente con JavaScript.",
     dev: ["HTML5", "CSS3", "SASS", "JavaScript", "gulp", "ES6"],
-    img: require("../images/AdivinaElNumero_cover.png"),
+    img: require("../images/projects/AdivinaElNumero_cover.png"),
     demo: "http://beta.adalab.es/f-m2-evaluacion-intermedia-mirenguerra/",
     code:
       "https://github.com/mirenguerra/f-m2-evaluacion-intermedia-mirenguerra",
@@ -37,7 +37,7 @@ const projectsInfo = [
     description:
       "Simple aplicación con un calendario en el que se puede anotar cómo ha ido el día con un smiley. Realizado con React.",
     dev: ["HTML5", "CSS3", "SASS", "React", "ES6"],
-    img: require("../images/LifeCalendar_cover.png"),
+    img: require("../images/projects/LifeCalendar_cover.png"),
     demo: "http://beta.adalab.es/f-online-life-calendar-mirenguerra/",
     code: "https://github.com/mirenguerra/f-online-life-calendar-mirenguerra",
   },
@@ -47,7 +47,7 @@ const projectsInfo = [
     description:
       "Página web responsive que permite al usuario crear una tarjeta de visita virtual, personalizando su diseño y compartirla gracias de un link o publicarla directamente en Twitter.",
     dev: ["HTML5", "CSS3", "SASS", "JavaScript", "Diseño Responsive", "ES6"],
-    img: require("../images/AwesomeProfileCards_cover.png"),
+    img: require("../images/projects/AwesomeProfileCards_cover.png"),
     demo: "http://beta.adalab.es/fairfax-m2-frontNerds/",
     code: "https://github.com/mirenguerra/fairfax-m2-frontNerds",
   },
@@ -66,7 +66,7 @@ const projectsInfo = [
       "ES6",
       "API REST",
     ],
-    img: require("../images/AwesomeProfileCardsReact_cover.png"),
+    img: require("../images/projects/AwesomeProfileCardsReact_cover.png"),
     demo: "http://beta.adalab.es/fairfax-m3-groot.join/",
     code: "https://github.com/mirenguerra/fairfax-m3-groot.join",
   },
@@ -76,7 +76,7 @@ const projectsInfo = [
     description:
       "SPA para solicitar vacaciones y guardarlas, realizada en apenas 30 horas para la empresa BMind. Los datos se obtienen de una API y se muestran los días de vacaciones de todos los empleados en un calendario anual, pudiendo además filtrar por año.",
     dev: ["HTML5", "CSS3", "SASS", "JavaScript", "React", "ES6", "API REST"],
-    img: require("../images/BmindHolidays_cover.png"),
+    img: require("../images/projects/BmindHolidays_cover.png"),
     demo: "http://beta.adalab.es/f-m4-bmind-calendar/",
     code: "https://github.com/mirenguerra/f-m4-bmind-calendar",
   },
@@ -95,7 +95,7 @@ const projectsInfo = [
       "ES6",
       "API REST",
     ],
-    img: require("../images/HarryPotterCharacters_cover.png"),
+    img: require("../images/projects/HarryPotterCharacters_cover.png"),
     demo: "http://beta.adalab.es/f-m3-evaluacion-final-mirenguerra/#/",
     code: "https://github.com/mirenguerra/f-m3-evaluacion-final-mirenguerra",
   },
@@ -113,7 +113,7 @@ const projectsInfo = [
       "ES6",
       "API REST",
     ],
-    img: require("../images/PokemonPokedex_cover.png"),
+    img: require("../images/projects/PokemonPokedex_cover.png"),
     demo: "http://beta.adalab.es/f-online-pokemon-mirenguerra/",
     code: "mirenguerra/f-online-pokemon-mirenguerra",
   },

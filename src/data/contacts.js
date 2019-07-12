@@ -2,7 +2,7 @@ const contacts = [
   {
     id: 1,
     name: "Github",
-    icon: require("../images/github.svg"),
+    icon: require("../images/contacts/github.svg"),
     type: "social-media",
     url: "https://github.com/mirenguerra",
     user: "@mirenguerra",
@@ -10,7 +10,7 @@ const contacts = [
   {
     id: 2,
     name: "Twitter",
-    icon: require("../images/twitter.svg"),
+    icon: require("../images/contacts/twitter.svg"),
     type: "social-media",
     url: "https://twitter.com/Miren_GS",
     user: "@Miren_GS",
@@ -18,7 +18,7 @@ const contacts = [
   {
     id: 3,
     name: "Linkedin",
-    icon: require("../images/linkedin.svg"),
+    icon: require("../images/contacts/linkedin.svg"),
     type: "social-media",
     url: "https://www.linkedin.com/in/mirenguerrasanz/",
     user: "mirenguerrasanz",
@@ -26,7 +26,7 @@ const contacts = [
   {
     id: 4,
     name: "Email",
-    icon: require("../images/mail.svg"),
+    icon: require("../images/contacts/mail.svg"),
     type: "email",
     url: "mailto:miren.guerra.sanz@gmail.com",
     user: "miren.guerra.sanz@gmail.com",
