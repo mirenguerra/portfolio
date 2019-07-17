@@ -7,7 +7,7 @@ import skills from "../../data/skills";
 const AboutMe = props => {
   const { closeNav } = props;
   return (
-    <div className="AboutMe">
+    <section className="AboutMe">
       <div className="AboutMe__left">
         <img
           className="AboutMe__photo"
@@ -22,7 +22,7 @@ const AboutMe = props => {
           gustaba mucho el trabajo, hace unos meses sentí la necesidad de
           reinventarme y buscando enfrentarme a nuevos desafíos, decidí
           convertirme en desarrolladora front-end. Gracias a Adalab he aprendido
-          a programar desde cero y a descubrir cuánto mola plantar cara a un
+          a programar desde cero y he descubierto cuánto mola plantar cara a un
           reto nuevo cada vez y conseguir comérmelo con patatas.
         </p>
         <h2 className="AboutMe__subtitle">¿Algo más?</h2>
@@ -32,8 +32,11 @@ const AboutMe = props => {
         </p>
         <h2 className="AboutMe__subtitle">¿Un secreto?</h2>
         <p className="AboutMe__description">
-          Mi truco para relajarme es doblar calcetines, y cuanto más coloridos
-          sean, ¡mejor!.
+          Mi truco para relajarme es doblar calcetines{" "}
+          <span role="img" aria-label="socks">
+            🧦
+          </span>
+          , y cuanto más coloridos sean, ¡mejor!.
         </p>
       </div>
       <div className="AboutMe__right">
@@ -54,7 +57,7 @@ const AboutMe = props => {
         </ul>
       </div>
       <HomeButton navClose={closeNav} />
-    </div>
+    </section>
   );
 };
 

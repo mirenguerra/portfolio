@@ -11,5 +11,9 @@
 
 .ContactElement__name {
   color: #292940eb;
+  font-size: 16px;
   margin: 5px 0 5px 10px;
+  &:hover{
+    color:#fdb44b;
+  }
 }

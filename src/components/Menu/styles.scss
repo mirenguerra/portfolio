@@ -29,12 +29,12 @@
   border: none;
   border-radius: 5px;
   &:hover {
-    background-color: darken(#fdb44b, 15%);
+    background-color: #292940;
   }
 }
 
 .hide {
-  transform: translateX(100%);
+  transform: translateX(-100%);
   transition: transform 1s;
   position: absolute;
   z-index: 5;
@@ -45,9 +45,8 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100%;
+  width: 200px;
   background-color: #292940eb;
-  color: white;
 }
 
 .show {
@@ -60,9 +59,23 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100%;
+  width: 200px;
   background-color: #292940eb;
   transform: translateX(0%);
   transition: transform ease 1s;
+}
+
+.Menu__nav-item {
   color: white;
+  &:hover {
+    color: #fdb44b;
+    transform: scale(1.1);
+    transition: transform ease 0.3s;
+  }
+  @media all and (min-width: 768px) {
+    font-size: 18px;
+  }
+  @media all and (min-width: 1024px) {
+    font-size: 20px;
+  }
 }

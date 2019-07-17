@@ -1,20 +1,41 @@
 .Contact {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
   height: 100vh;
-  background-color: #fdb44b;
+  padding: 10px;
+  background-image: url(../../images/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   flex-grow: 1;
 }
 
-.Contact__list{
-  width: 320px;
-  height: auto;
-  margin-bottom: 40px;
-  padding: 10px;
-  border: solid rgba(51, 122, 183, 0.1) thin;
+.Contact__wrapper {
+  background-color: #fdb34bd5;
   border-radius: 5px;
-  box-shadow: 0 12px 12px 0 #f39e26;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.Contact__title {
+  color: #292940eb;
+}
+
+.Contact__list {
+  width: 280px;
+  height: auto;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border: solid #337ab71a thin;
+  border-radius: 5px;
+  box-shadow: 0 12px 12px 0 #292940eb;
   background-color: white;
 }

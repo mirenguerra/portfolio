@@ -13,9 +13,9 @@ const Menu = props => {
         onClick={handleToggleClick}
       />
       <nav className={isClose ? "hide" : "show"}>
-        <Link to="/projects"> Proyectos</Link>
-        <Link to="/aboutme">Sobre mí</Link>
-        <Link to="/contact">Contacto</Link>
+        <Link to="/projects" className="Menu__nav-item"> Proyectos</Link>
+        <Link to="/aboutme" className="Menu__nav-item">Sobre mí</Link>
+        <Link to="/contact" className="Menu__nav-item">Contacto</Link>
       </nav>
     </React.Fragment>
   );
