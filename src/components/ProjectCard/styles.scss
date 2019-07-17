@@ -7,6 +7,10 @@
   border-radius: 5px;
   box-shadow: 0 12px 12px 0 #f39e26;
   background-color: white;
+  @media all and (min-width: 768px) {
+  height: 550px;
+  width: 420px;
+  }
 }
 
 .Card__img {
@@ -24,6 +28,9 @@
   font-size: 20px;
   font-weight: 700;
   text-align: left;
+  @media all and (min-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 .Card__description{
@@ -31,6 +38,9 @@
   font-weight: 400;
   text-align: justify;
   padding-bottom: 10px;
+  @media all and (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 
@@ -46,6 +56,9 @@
   z-index: 1;
   box-shadow: 0 5px 10px grey;
   font-size: 10px;
+  @media all and (min-width: 768px) {
+    font-size: 15px;
+  }
 }
 
 .tooltip:hover .tiptext {

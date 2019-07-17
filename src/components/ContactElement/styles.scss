@@ -16,4 +16,7 @@
   &:hover{
     color:#fdb44b;
   }
+  @media all and (min-width: 768px) {
+    font-size: 20px;
+  }
 }

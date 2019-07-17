@@ -15,7 +15,7 @@ const ProjectCard = props => {
       >
       <div className="tooltip" >
         <img className="Card__img" src={img} alt={name} />
-        <span className="tiptext">Pincha sobre la imagen para ver la demo</span>
+        <span className="tiptext">Pincha para ver la demo</span>
                 </div>
       </a>
          

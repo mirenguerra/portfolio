@@ -8,6 +8,12 @@
   background-color: white;
 }
 
+.Card__list-title{
+  @media all and (min-width: 768px) {
+    font-size: 30px;
+  }
+}
+
 .Card__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
