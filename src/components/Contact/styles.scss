@@ -38,4 +38,7 @@
   border-radius: 5px;
   box-shadow: 0 12px 12px 0 #292940eb;
   background-color: white;
+  @media all and (min-width: 768px) {
+    width: auto;
+  }
 }
