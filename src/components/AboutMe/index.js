@@ -20,10 +20,10 @@ const AboutMe = props => {
           Estudié Ingeniería Técnica en Obras Públicas y trabajé durante años en
           temas de movilidad y accesibilidad en entornos urbanos. Aunque me
           gustaba mucho el trabajo, hace unos meses sentí la necesidad de
-          reinventarme y buscando enfrentarme a nuevos desafíos, decidí
+          reinventarme y, buscando enfrentarme a nuevos desafíos, decidí
           convertirme en desarrolladora front-end. Gracias a Adalab he aprendido
           a programar desde cero y he descubierto cuánto mola plantar cara a un
-          reto nuevo cada vez y conseguir comérmelo con patatas.
+          reto nuevo cada vez y conseguir comérmelo con pepinillos. Sí, ¡me encantan!
         </p>
         <h2 className="AboutMe__subtitle">¿Algo más?</h2>
         <p className="AboutMe__description">
@@ -32,11 +32,7 @@ const AboutMe = props => {
         </p>
         <h2 className="AboutMe__subtitle">¿Un secreto?</h2>
         <p className="AboutMe__description">
-          Mi truco para relajarme es doblar calcetines{" "}
-          <span role="img" aria-label="socks">
-            🧦
-          </span>
-          , y cuanto más coloridos sean, ¡mejor!.
+          Mi truco para relajarme es doblar calcetines, y cuanto más coloridos sean, ¡mejor!.
         </p>
       </div>
       <div className="AboutMe__right">
